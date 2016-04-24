@@ -1,8 +1,0 @@
-C:\Q\git\LinqpadServer\LinqpadServer.Tests\bin\Debug\LinqpadServer.Tests.dll
-C:\Q\git\LinqpadServer\LinqpadServer.Tests\bin\Debug\LinqpadServer.Tests.pdb
-C:\Q\git\LinqpadServer\LinqpadServer.Tests\bin\Debug\LinqpadServer.dll
-C:\Q\git\LinqpadServer\LinqpadServer.Tests\bin\Debug\LinqpadServer.pdb
-C:\Q\git\LinqpadServer\LinqpadServer.Tests\obj\Debug\LinqpadServer.Tests.csprojResolveAssemblyReference.cache
-C:\Q\git\LinqpadServer\LinqpadServer.Tests\obj\Debug\LinqpadServer.Tests.dll
-C:\Q\git\LinqpadServer\LinqpadServer.Tests\obj\Debug\LinqpadServer.Tests.pdb
-C:\Q\git\LinqpadServer\LinqpadServer.Tests\bin\Debug\snippets\test.linq
