@@ -32,6 +32,10 @@ curl -X GET "http://localhost:2473/api/snippet/list"
 
 ### To build and run
 
+Be sure you have lprun.exe in your PATH by enabling it during installation You may need to reinstall LINQPad to enable this option if you don't want to edit your PATH.
+
+![Image](https://raw.githubusercontent.com/jogleasonjr/linqpad-server/master/images/installOption.png)
+
 1. Get the code
   `git clone https://github.com/jogleasonjr/linqpad-server.git`
 2. Open LinqpadServer.sln in Visual Studio 2015
