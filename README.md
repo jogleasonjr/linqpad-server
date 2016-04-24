@@ -42,4 +42,4 @@ curl -X GET "http://localhost:2473/api/snippet/list"
 
 By default, the api will list the snippets in your `~/Documents/LINQPad Queries` folder. To override this, put an alternative directory [here](https://github.com/jogleasonjr/linqpad-server/blob/master/LinqpadServer.WebApi/Controllers/SnippetController.cs#L15).
 
-The data you POST will simply transform into the `args[]` parameter in `main(string[] args)'. The results will be a string array of everything sent to `Console.WriteLine` or the `.Dump()` extension method.
+The data you POST will simply transform into the `args[]` parameter in `main(string[] args)`. The results will be a string array of everything sent to `Console.WriteLine` or the `.Dump()` extension method.
