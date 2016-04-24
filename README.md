@@ -4,7 +4,7 @@
 
 ## Call this test.linq snippet:
 
-![Image](C:\Q\git\LinqpadServer\images\snippet.png)
+![Image](https://raw.githubusercontent.com/jogleasonjr/linqpad-server/master/images/snippet.png)
 
 ## Using this:
 
