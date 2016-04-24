@@ -1,0 +1,5 @@
+C:\Q\git\LinqpadServer\LinqpadServer\bin\Debug\LinqpadServer.dll
+C:\Q\git\LinqpadServer\LinqpadServer\bin\Debug\LinqpadServer.pdb
+C:\Q\git\LinqpadServer\LinqpadServer\obj\Debug\LinqpadServer.dll
+C:\Q\git\LinqpadServer\LinqpadServer\obj\Debug\LinqpadServer.pdb
+C:\Q\git\LinqpadServer\LinqpadServer\obj\Debug\LinqpadServer.csprojResolveAssemblyReference.cache
