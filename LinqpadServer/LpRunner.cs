@@ -27,16 +27,24 @@ namespace LinqpadServer
                     Arguments = $"\"{file.FullName}\" {arguments}",
                     UseShellExecute = false,
                     RedirectStandardOutput = true,
+                    RedirectStandardError = true,
                     CreateNoWindow = true
                 }
             };
 
             var lines = new List<string>();
             proc.Start();
+
             while (!proc.StandardOutput.EndOfStream)
             {
                 var line = proc.StandardOutput.ReadLine();
                 yield return line;
+            }
+
+            while (!proc.StandardError.EndOfStream)
+            {
+                var line = proc.StandardError.ReadLine();
+                yield return "ERROR! " + line;
             }
         }
 

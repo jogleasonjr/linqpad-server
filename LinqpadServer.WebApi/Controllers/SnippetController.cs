@@ -5,14 +5,20 @@ using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Web.Http;
+using System.Configuration;
 
 namespace LinqpadServer.WebApi.Controllers
 {
     [RoutePrefix("api/snippet")]
     public class SnippetController : ApiController
     {
+        /// <summary>
+        /// Uncomment and modify this setting in Web.Config to override the default snippet directory
+        /// </summary>
+        private const string SnippetDefaultDirConfigurationKey = "SnippetDefaultDir";
+
         // this lists snippets
-        private readonly SnippetRepo _repo = new SnippetRepo(/* OVERRIDE DEFAULT DIR HERE*/);
+        private readonly SnippetRepo _repo;
 
         // this executes snippets
         private readonly LpRunner _runner = new LpRunner();
@@ -22,7 +28,15 @@ namespace LinqpadServer.WebApi.Controllers
         /// </summary>
         public SnippetController()
         {
-
+            var snippetDir = ConfigurationManager.AppSettings[SnippetDefaultDirConfigurationKey];
+            if (snippetDir != null)
+            {
+                _repo = new SnippetRepo(new DirectoryInfo(snippetDir));
+            }
+            else
+            {
+                _repo = new SnippetRepo();
+            }
         }
 
         /// <summary>
